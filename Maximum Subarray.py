@@ -10,3 +10,14 @@ class Solution:
                 nums[idx] += nums[idx-1]
                 
         return max(nums)
+
+        # Solution 2
+        # maxSub = nums[0]
+        # curSum = 0
+        
+        # for n in nums:
+        #     if curSum < 0:
+        #         curSum = 0
+        #     curSum += n
+        #     maxSub = max(maxSub, curSum)
+        # return maxSub
